@@ -16,7 +16,22 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={inter.className}>
+        {headers}
+        {children}
+        {footer}
+      </body>
     </html>
   );
 }
+
+const headers = (
+  <header>
+    <h1>Deepaks Blog</h1>
+  </header>
+);
+const footer = (
+  <footer>
+    <h1>Deepaks Blog</h1>
+  </footer>
+);
