@@ -32,6 +32,6 @@ const headers = (
 );
 const footer = (
   <footer>
-    <h1>Deepaks Blog</h1>
+    <h1>footer</h1>
   </footer>
 );
