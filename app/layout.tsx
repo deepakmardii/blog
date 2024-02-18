@@ -22,7 +22,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
-        <div className="relative h-full w-full bg-slate-950 px-6">
+        <div className="relative h-full w-full bg-slate-950 px-6 no-scrollbar">
           <div className="absolute bottom-0 left-0 right-0 top-0 bg-[linear-gradient(to_right,#4f4f4f2e_1px,transparent_1px),linear-gradient(to_bottom,#4f4f4f2e_1px,transparent_1px)] bg-[size:14px_24px] [mask-image:radial-gradient(ellipse_60%_50%_at_50%_0%,#000_70%,transparent_100%)]"></div>{" "}
           <div className=" relative mx-auto max-w-2xl text-white">
             {headers}
@@ -77,7 +77,7 @@ const footer = (
   <footer>
     <div className="border-t border-gray-600 flex py-6 justify-between">
       <h1 className="animate-background-shine bg-[linear-gradient(110deg,#939393,45%,#1e293b,55%,#939393)] bg-[length:250%_100%] bg-clip-text text-transparent">
-        Made by Deepak
+        Made by Deepak M.
       </h1>
       <div className="flex gap-4">
         <a

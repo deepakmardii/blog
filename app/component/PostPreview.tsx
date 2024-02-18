@@ -55,7 +55,7 @@ const PostPreview = (props: PostMetadata) => {
         />
         <div className="">
           <p className="text-xs text-gray-400">{props.date}</p>
-          <h2 className="pb-4 bg-gradient-to-t from-[#c7d2fe] to-[#8678f9] bg-clip-text text-transparent text-xl">
+          <h2 className="mb-4 bg-gradient-to-t from-[#c7d2fe] to-[#8678f9] bg-clip-text text-transparent text-xl ">
             {props.title}
           </h2>
           <p className="line-clamp-2">{props.subtitle}</p>
