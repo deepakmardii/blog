@@ -1,3 +1,4 @@
+import getPostMetadata from "@/common/getPostMetadata";
 import fs from "fs";
 import matter from "gray-matter";
 import Markdown from "markdown-to-jsx";
@@ -8,6 +9,14 @@ const getPostContent = (slug: string) => {
   const content = fs.readFileSync(file, "utf8");
   const matterResult = matter(content);
   return matterResult;
+};
+
+export const generateStaticParams = async () => {
+  const posts = getPostMetadata();
+  // return [{ slug: "this-is-mkardown-1.md" }];
+  return posts.map((post) => ({
+    slug: post.slug,
+  }));
 };
 
 const page = (props: any) => {
