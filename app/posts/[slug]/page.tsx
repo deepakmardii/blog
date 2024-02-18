@@ -24,8 +24,10 @@ const page = (props: any) => {
   const post = getPostContent(slug);
   return (
     <div>
-      <h1>{post.data.title}</h1>
-      <Markdown>{post.content}</Markdown>
+      <h1 className="text-5xl font-bold">{post.data.title}</h1>
+      <article className="prose prose-pink">
+        <Markdown>{post.content}</Markdown>
+      </article>
     </div>
   );
 };
