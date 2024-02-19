@@ -33,7 +33,7 @@ sudo yum -y install ninja-build libtool autoconf automake cmake gcc gcc-c++ make
 sudo zypper install ninja libtool autoconf automake cmake gcc-c++ gettext-tools curl
 ```
 
-## For Arch Linux
+### For Arch Linux
 
 ```
 sudo pacman -S base-devel cmake unzip ninja tree-sitter curl
